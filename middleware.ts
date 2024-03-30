@@ -10,14 +10,14 @@ export default authMiddleware({
     "/events",
     "/events:id",
     "/api/webhook/stripe",
-    "/api/webhook/clerk",
+    "/api/webhooks/clerk",
     "/api/uploadthing",
   ],
   // Prevent the specified routes from accessing
   // authentication information:
   ignoredRoutes: [
     "/api/webhook/stripe",
-    "/api/webhook/clerk",
+    "/api/webhooks/clerk",
     "/api/uploadthing",
   ],
 });
